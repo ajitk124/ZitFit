@@ -1,0 +1,32 @@
+<nav class="navbar navbar-inverse bg-primary">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/home">ZitFit</a>
+        </div>
+        <ul class="nav navbar-top-links navbar-right">
+
+            <!-- /.dropdown -->
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <span class="glyphicon glyphicon-user white
+
+"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-user">
+                    <li><a [routerLink]="['/securehome/myprofile']"> User
+                        Profile</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a [routerLink]="['/securehome/logout']">Logout</a>
+                    </li>
+                </ul>
+                <!-- /.dropdown-user -->
+            </li>
+            <!-- /.dropdown -->
+        </ul>
+    </div>
+</nav>
+
+<div class="intro-header">
+    <router-outlet></router-outlet>
+</div>
